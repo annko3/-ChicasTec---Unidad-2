@@ -37,3 +37,9 @@ Repositorio para el curso ChicasTec Unidad 2 que contiene las secciones de apren
 
 ### Sección 33
 - DOM y eventos
+
+### Sección 34
+- Strings, Math, fechas
+
+### Sección 36
+- Gestión de ramas y trabajo colaborativo
