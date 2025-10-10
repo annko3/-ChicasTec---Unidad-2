@@ -1,4 +1,5 @@
-
+//OBJETOS en javascript
+/*ejemplo de un objeto de persona*/
 
 let person = {
     name: "Nicole",
@@ -9,17 +10,33 @@ let person = {
 
 console.log(person);
 
+/* Accediendo al valor de los atributos de mi objeto,
+hay 2 formas: */
+//acceder con notacion de punto
 console.log(person.name);
 console.log(person.age);
 console.log(person.cellphone);
+//acceder con notacion de corchetes
 console.log(person["hobbies"]);
 
+//Mostrar todos los atributos de tu objeto
+console.log(person.cellphone);
+console.log(person.hobbies);
+console.log(person.hobbies[0]);
+console.log(person.hobbies[1]);
 
+//Actualizar el valor de un objeto
+person.cellphone = "93388810";
+console.log(person.cellphone);
+person.age = 19;
+console.log(person.age);
+
+//Agregar un nuevo atributo
 person.birthdate = "2005-03-25";
 console.log(person);
 
 
-
+//JSON - JavaScript Object Notation
 
 let heroes = {
     "squadName": "Super hero squad",
@@ -63,6 +80,19 @@ let heroes = {
     ]
   }
 
-  console.log(heroes.members[1].powers[1]);
-  console.log(heroes.members[2].name);
-  console.log(heroes.members[2].powers[2]);
+  console.log(heroes);
+  console.log(heroes.formed); //mostrar el valor 2016
+  console.log(heroes.active);
+
+  //Mostrar el atributo
+  console.log(heroes.members);
+
+  //Indexar heroes.members
+  console.log("Primer elemento de heroes.members :");
+  //como es un arreglo, lo puedo indexar
+  console.log(heroes.members[0]);
+  //iacceder a los atributos de heroes.members[0] ya q es un objeto
+  console.log(heroes.members[0].name);
+  console.log(heroes.members[0].secretIdentity);
+  //heroes.members[0].powers es un arreglo, puedo indexar
+  console.log(heroes.members[0].powers[1]);
